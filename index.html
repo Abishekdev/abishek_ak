@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Alumni+Sans+Pinstripe:ital@0;1&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;1,200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./animation.css">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/logo.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,8 +36,8 @@
         <div class="quote">I build awesome looking and fully functional web applications
             <br> using PHP and a lot of coffee ☕.</div>
         <div class="main_links">
-            <a href="mailto:vabishek9442@gmail.com">vabishek9442@gmail.com</a>
-            <a href="https://linedin.com/in/abishek-akv" target="_blank" rel="noopener noreferrer">linkedin/@abishek-akv</a>
+            <a class="hover-underline" href="mailto:vabishek9442@gmail.com">vabishek9442@gmail.com</a>
+            <a class="hover-underline" href="https://linedin.com/in/abishek-akv" target="_blank" rel="noopener noreferrer">linkedin/@abishek-akv</a>
         </div>
     </div>
     <div class="about_me">
@@ -46,7 +47,7 @@
                 <div class="abt_content">
                     <div class="abt_bio">
                                             <h1 style="font-family: Comic Neue, cursive;color: #8b31ff;">Hey there!</h1>
-                            <p>I'm <l> Abishek</l>, a <l>Computer Science and Engineering Student </l> at the prestigious Kings College of Engineering 🏫.
+                            <p>I'm <l class="hover-underline"> Abishek</l>, a <l class="hover-underline">Computer Science and Engineering Student </l> at the prestigious Kings College of Engineering 🏫.
                             <br><br>
                             You can find me tinkering with electronics 🔌,<br><br>
                             Experimenting with new programming languages , and trying to perfect my web development skills 🚀
@@ -57,7 +58,7 @@
                             My friends might say I'm crazy for trying to learn so much at once, but hey, when you're passionate about tech like I am 🔥, it doesn't feel like work! <br><br>
                             So if you ever need a partner in crime for coding adventures, web development escapades, or just a friendly chat about the latest tech trends 🤝 <br><br> let's connect! I'm always up for a conversation (and maybe a few late-night coding sessions 💻).</p>
                             <p class="social_title"></p>
-                        <div class="abt_social_lnk">
+                        <div  class="abt_social_lnk">
                             <a target="_blank" href="https://instagram.com/_abishek_ak"><svg stroke="white" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"></path><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path><path d="M16.5 7.5v.01"></path></svg></a>
                             <a target="_blank" href="mailto:vabishek9442@gmail.com"><svg stroke="white" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path><path d="m21.854 2.147-10.94 10.939"></path></svg></a>
                             <a target="_blank" href="https://linkedin.com/in/abishek-akv"><svg stroke="white" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M8 11v5"></path><path d="M8 8v.01"></path><path d="M12 16v-5"></path><path d="M16 16v-3a2 2 0 1 0 -4 0"></path><path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z"></path></svg></a>
@@ -166,7 +167,32 @@
         </div>
         </div>
     </div>
-    
-    
+            <div class="contact_me">
+                <div class="con_title" ><svg style="margin-top: -5px;" stroke="white" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg><h1 style="margin-left:0.5%;">Contact</h1></div>
+           <div class="contact">
+             <div class="contact-form">
+
+                <form action="email.php" method="post" id="contact-form">
+                    <input name="name" type="text" class="con_in" placeholder="Name" required="">
+                    <br>
+                    <input name="email" type="email" class="con_in" placeholder="Email" required="">
+                    <br>
+                    <textarea name="message" class="con_in" placeholder="Message" rows="6" required=""></textarea>
+                    <br>
+                    <button type="submit" class="con_btn submit" value="SEND">Send<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="16" width="16" xmlns="http://www.w3.org/2000/svg" style="margin-left: 0.8rem;"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path><path d="m21.854 2.147-10.94 10.939"></path></svg></button>
+                </form>
+            </div>
+        </div>
+            <div style="justify-content: center;gap:2%;" class="abt_social_lnk">
+                <a target="_blank" href="https://instagram.com/_abishek_ak"><svg stroke="white" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"></path><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path><path d="M16.5 7.5v.01"></path></svg></a>
+                <a target="_blank" href="mailto:vabishek9442@gmail.com"><svg stroke="white" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path><path d="m21.854 2.147-10.94 10.939"></path></svg></a>
+                <a target="_blank" href="https://linkedin.com/in/abishek-akv"><svg stroke="white" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M8 11v5"></path><path d="M8 8v.01"></path><path d="M12 16v-5"></path><path d="M16 16v-3a2 2 0 1 0 -4 0"></path><path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z"></path></svg></a>
+                <a target="_blank" href="https://github.com/Abishekdev"><svg stroke="white" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+                <a target="_blank" href="https://www.x.com/AbishekDEV/"><svg class="X" stroke="currentColor" fill="white" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M17.6874 3.0625L12.6907 8.77425L8.37045 3.0625H2.11328L9.58961 12.8387L2.50378 20.9375H5.53795L11.0068 14.6886L15.7863 20.9375H21.8885L14.095 10.6342L20.7198 3.0625H17.6874ZM16.6232 19.1225L5.65436 4.78217H7.45745L18.3034 19.1225H16.6232Z"></path></svg></a>
+            </div>
+    </div>
+    <footer>
+        <h4>Build & Designed By <l class="hover-underline"><a target="_blank" href="https://github.com/abishekdev"> Abishek</l></a></h4>
+    </footer>
 </body>
 </html>

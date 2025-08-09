@@ -81,7 +81,7 @@ body{
     box-shadow: #8b31ff 0px 0px 8px;
     border: 2px solid var(--primary-color);
     border-radius: 5px;
-    /* margin: -2px; */
+    margin: -2px;
     
     
 }
@@ -97,6 +97,7 @@ body{
     box-shadow: #8b31ff 0px 0px 5px;
     border-radius:5px!important;
     background:linear-gradient(var(--primary-color));
+    margin: 0px!important;
 }
 .dev_txt{
     margin-top: 2%;
@@ -257,7 +258,6 @@ l{
     height: 50px; 
     padding-right: 3%;
     stroke:white; 
-    fill:white;
 }
 .skl_title h1{
     margin-left: 10%;
@@ -325,3 +325,86 @@ l{
     fill:#8b31ff;
 }
 /* Skills */
+.contact{
+    /* margin-top: 60%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    align-items: normal;
+}
+.con_title{
+    margin-top: 60%;
+    font-family: "Josefin Sans", sans-serif;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.con_title svg{
+    height: 35px;
+    font-family: "Josefin Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact-form{
+    width: 70%;
+    margin-left: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.con_in{
+    width: 50%;
+    color: var(--secondary-color);
+    font-family: unset;
+    font-size: 18px;
+    background: transparent;
+    border: var(--primary-color) solid 2px;
+    padding: 1% 5% 1% 1%;
+    border-radius: 5px;
+    
+}
+.con_in:focus-visible{
+    background: #7d21f52e;
+    outline: none!important;
+    border: var(--primary-color) solid 2px;
+    box-shadow: var(--primary-color) 0px 0px 10px;
+}
+.submit{
+        width: 20% !important;
+    border: var(--primary-color) solid 2px;
+    font-family: 'Josefin Sans';
+    font-weight: 700;
+    font-size: 18px;
+    background: transparent;
+    color: var(--secondary-color);
+    padding: 15px 0 15px 0px;
+    border-radius: 5px;
+    margin-left: 18%;
+
+}
+.contact_me{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 5%;
+    background-color: #1A171E;
+}
+footer{
+    width:100%;
+    background-color: var(--background-color);
+
+}
+footer h4{
+    text-align: center;
+
+}
+footer h4 a{
+    color: var(--primary-color);
+    
+}
+footer h4 a:active{
+    color: var(--primary-color);
+    
+}
