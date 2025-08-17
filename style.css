@@ -517,5 +517,8 @@ footer h4 a:active{
     .dev_txt {
     margin-top: 40%;
     transform: rotateZ(335deg);
+    font-size: 300px;
+    position: fixed;
+    margin-left: -25%;
 }
 }
