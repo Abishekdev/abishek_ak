@@ -12,6 +12,7 @@ body{
     color: var(--secondary-color);
     font-family:"JetBrains Mono","Fira Code",monospace;
 }
+
 /* .round_dsn{
         width: 700px;
     background-color: #7000ff;
@@ -68,13 +69,14 @@ body{
 
 }
 .con_list a{
-    
+    padding: 0px;
     text-decoration: none;
     color: whitesmoke!important;
     padding: 10% 30% 10% 30%;
     /* margin: 5px; */
     /* margin-left: 20%; */
     /* position: auto; */
+    transition: 0.4s linear!important;
     
 }
 .con_list a:hover{
@@ -82,6 +84,7 @@ body{
     border: 2px solid var(--primary-color);
     border-radius: 5px;
     margin: -2px;
+    transition: 0.4s linear!important;
     
     
 }
@@ -98,6 +101,7 @@ body{
     border-radius:5px!important;
     background:linear-gradient(var(--primary-color));
     margin: 0px!important;
+    transition: 0.4s linear!important;
 }
 .dev_txt{
     margin-top: 2%;
@@ -265,10 +269,14 @@ l{
 /* SKills */
 
 .center{
-  margin-top: 100%;
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: space-between;
+  margin-top: 15%;
   position:absolute;
-  width:40%;
-  top: 70%;
+  width:60%;
+  /* top: 70%; */
   left:50%;
   transform:translate(-50%,-50%);
   padding:50px;
@@ -373,16 +381,16 @@ l{
     box-shadow: var(--primary-color) 0px 0px 10px;
 }
 .submit{
-        width: 20% !important;
+        width: 12% !important;
     border: var(--primary-color) solid 2px;
     font-family: 'Josefin Sans';
     font-weight: 700;
     font-size: 18px;
-    background: transparent;
+    background: #8b31ff26;
     color: var(--secondary-color);
     padding: 15px 0 15px 0px;
     border-radius: 5px;
-    margin-left: 18%;
+    margin-left: 23%;
 
 }
 .contact_me{
@@ -407,4 +415,88 @@ footer h4 a{
 footer h4 a:active{
     color: var(--primary-color);
     
+}
+.frontend{
+    width: 40%;
+}
+.backend{
+    width: 40%;
+}
+.database{
+    width: 40%;
+}
+.tools{
+    width: 40%;
+}
+@media (max-width:768px) {
+    .name{
+        font-size: 65px;
+    }
+    .bar{
+        margin-top: -10px;
+    }
+    .quote{
+        font-size: 18px;
+    }
+    .abt_bio {
+    width: 95%;
+    }
+    .abt_content {
+    display: flex;
+    gap: 0%;
+    flex-direction: column;
+    }
+    .abt_img {
+    width: 100%;
+    }
+    .abt_img img{
+    width: 100%;
+    }
+    .abt_social_lnk{
+        justify-content: center;
+    }
+    .center{
+        width: 100%;
+        flex-direction: column;
+        margin-top: 100%;
+
+    }
+    .contact_me{
+            margin-top: 300%;
+    }
+    .frontend{
+    width: 90%;
+    margin-left:15%
+    }
+    .backend{
+    width: 90%;
+    margin-left:15%
+    }
+    .database{
+    width: 90%;
+    margin-left:15%
+    }
+    .tools{
+    width: 90%;
+    margin-left:15%
+    }
+    .abt_container{
+    width: 95%;
+    }
+    #contact-form {
+    width: 100%;
+    align-items: center;
+    margin-left: 0;
+    }
+    .submit{
+        margin-left: 0;
+        width: 30% !important;
+        padding: 10px 0 10px 0px;
+    }
+    .con_list a{
+        display:none;
+    }
+    .con_list p{
+        display:none;
+    }
 }
