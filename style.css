@@ -23,16 +23,14 @@ body{
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 1000%;
-} */
+    } */
 .header{
     height:60px;
-    
     display: flex;
     justify-content: center;
     flex-direction: row;
     margin-left: 15%;
     gap: 20%;
-
     /* position: relative; */
     /* display: flex; */
     /* float: left; */
@@ -436,7 +434,8 @@ footer h4 a:active{
         margin-top: -10px;
     }
     .quote{
-        font-size: 18px;
+        /* font-size: 18px; */
+        margin-top: 10%;
     }
     .abt_bio {
     width: 95%;
@@ -498,5 +497,21 @@ footer h4 a:active{
     }
     .con_list p{
         display:none;
+    }
+    .about_me{
+        margin-top: 190%;
+    }
+    .in_name {
+    font-size: 16px;
+    }
+    .main_info {
+    margin-top: 40%;
+    padding-left: 8%;
+    }
+    .main_links a {
+    margin-top: 10%;
+    }
+    .main_links{
+        margin-top: 65%;
     }
 }
