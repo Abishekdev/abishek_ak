@@ -7,7 +7,6 @@ a{
     text-decoration: none;
 }
 body{
-    transition: 2s linear!important;
     background: var(--background-color);
     color: var(--secondary-color);
     font-family:"JetBrains Mono","Fira Code",monospace;
@@ -515,10 +514,13 @@ footer h4 a:active{
         margin-top: 50%;
     }
     .dev_txt {
-    margin-top: 40%;
+    /* margin-top: 40%;
     transform: rotateZ(335deg);
     font-size: 300px;
     position: fixed;
-    margin-left: -25%;
-}
+    margin-left: -25%; */
+    }
+    .header{
+        margin-left: 6%;
+    }
 }
