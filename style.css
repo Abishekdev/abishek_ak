@@ -514,4 +514,8 @@ footer h4 a:active{
     .main_links{
         margin-top: 65%;
     }
+    .dev_txt {
+    margin-top: 40%;
+    transform: rotateZ(335deg);
+}
 }
