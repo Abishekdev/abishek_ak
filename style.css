@@ -139,7 +139,7 @@ body{
 .main_links{
     font-size: 15px;
     
-    margin-top: 20%;
+    margin-top: 16%;
 }
 .main_links a{
     margin-left: 8%;
@@ -161,6 +161,12 @@ body{
     width: 230px;
     margin-top: -20px;
     margin-left: -5px;
+}
+.skl_br{
+    margin-top: -3px;
+    width: 60px;
+    height: 2px;
+    margin-left: 1px;
 }
 .about_me{
     background-color: #1A171E;
@@ -339,7 +345,8 @@ l{
     align-items: normal;
 }
 .con_title{
-    margin-top: 60%;
+    /* margin-top: 60%; */
+    margin-top: 35%;
     font-family: "Josefin Sans", sans-serif;
     display: flex;
     align-items: center;
@@ -513,14 +520,10 @@ footer h4 a:active{
     .main_links{
         margin-top: 50%;
     }
-    .dev_txt {
-    /* margin-top: 40%;
-    transform: rotateZ(335deg);
-    font-size: 300px;
-    position: fixed;
-    margin-left: -25%; */
-    }
     .header{
         margin-left: 6%;
+    }
+    .skl_br{
+    margin-top: 0px;   
     }
 }
