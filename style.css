@@ -73,6 +73,17 @@ body{
 
     /* Responsive */
     @media (max-width: 768px) {
+       html, body
+    {
+      -ms-content-zooming:none;  
+      /* touch-action: none; */
+      content-zooming: none;
+      /* overflow-y: hidden; */
+    overflow-x: hidden; 
+    /* overflow-y: none; */
+    overflow-x: none; 
+    }
+
       .nav-links {
         position: absolute;
         top: 60px;
