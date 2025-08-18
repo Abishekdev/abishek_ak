@@ -79,7 +79,7 @@ body{
       /* touch-action: none; */
       content-zooming: none;
       /* overflow-y: hidden; */
-    overflow-x: hidden; 
+    /* overflow-x: hidden;  */
     /* overflow-y: none; */
     overflow-x: none; 
     }
